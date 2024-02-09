@@ -44,8 +44,8 @@ public class Drive extends SubsystemBase {
 
   // TODO: NON-SIM FEEDFORWARD GAINS MUST BE TUNED
   // Consider using SysId routines defined in RobotContainer
-  private static final double KS = Constants.currentMode == Mode.SIM ? 0.0 : 0.0;
-  private static final double KV = Constants.currentMode == Mode.SIM ? 0.227 : 0.0;
+  private static final double KS = Constants.currentMode == Mode.SIM ? 0.0 : 0.156;
+  private static final double KV = Constants.currentMode == Mode.SIM ? 0.227 : 1.76;
 
   private final DriveIO io;
   private final DriveIOInputsAutoLogged inputs = new DriveIOInputsAutoLogged();
