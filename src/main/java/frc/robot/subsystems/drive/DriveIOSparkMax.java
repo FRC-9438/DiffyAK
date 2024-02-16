@@ -30,7 +30,7 @@ import edu.wpi.first.wpilibj.SPI;
  */
 public class DriveIOSparkMax implements DriveIO {
   private static final double GEAR_RATIO = 8.46;
-  private static final double KP = 0.0093751; // TODO: MUST BE TUNED, consider using REV Hardware Client
+  private static final double KP = 2.8002; // TODO: MUST BE TUNED, consider using REV Hardware Client
   private static final double KD = 0.0; // TODO: MUST BE TUNED, consider using REV Hardware Client
 
   private final CANSparkMax leftLeader = new CANSparkMax(10, MotorType.kBrushless);
